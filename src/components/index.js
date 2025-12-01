@@ -1,15 +1,5 @@
-import SubHeading from './SubHeading/SubHeading';
-import Newsletter from './Footer/Newsletter';
-import FooterOverlay from './Footer/FooterOverlay';
-import MenuItem from './Menuitem/MenuItem';
-import Navbar from './Navbar/Navbar';
-import ScrollToTop from './ScrollToTop/ScrollToTop';
-
-export {
-  SubHeading,
-  Newsletter,
-  FooterOverlay,
-  MenuItem,
-  Navbar,
-  ScrollToTop,
-};
+export { default as SubHeading } from "./SubHeading";
+export { Newsletter, FooterOverlay } from "./Footer";
+export { default as MenuItem } from "./MenuItem";
+export { default as Navbar } from "./Navbar";
+export { default as ScrollToTop } from "./ScrollToTop";

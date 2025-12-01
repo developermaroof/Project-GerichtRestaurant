@@ -1,21 +1,9 @@
-import AboutUs from './AboutUs/AboutUs';
-import Chef from './Chef/Chef';
-import FindUs from './Findus/FindUs';
-import Footer from './Footer/Footer';
-import Gallery from './Gallery/Gallery';
-import Header from './Header/Header';
-import Intro from './Intro/Intro';
-import Laurels from './Laurels/Laurels';
-import SpecialMenu from './Menu/SpecialMenu';
-
-export {
-  AboutUs,
-  Chef,
-  FindUs,
-  Footer,
-  Gallery,
-  Header,
-  Intro,
-  Laurels,
-  SpecialMenu,
-};
+export { default as AboutUs } from './AboutUs';
+export { default as Chef } from './Chef';
+export { default as FindUs } from './Findus';
+export { default as Footer } from './Footer';
+export { default as Gallery } from './Gallery';
+export { default as Header } from './Header';
+export { default as Intro } from './Intro';
+export { default as Laurels } from './Laurels';
+export { default as SpecialMenu } from './Menu';
