@@ -36,6 +36,21 @@
 .app__chef-sign img {
   width: 250px;
   margin-top: 3rem;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 5px 15px rgba(220, 202, 135, 0.3));
+}
+
+.app__chef-sign:hover img {
+  transform: translateX(5px);
+}
+
+.app__wrapper_img img {
+  transition: transform 0.5s ease;
+  filter: drop-shadow(0 10px 30px rgba(220, 202, 135, 0.2));
+}
+
+.app__wrapper_img:hover img {
+  transform: scale(1.05);
 }
 
 @media screen and (min-width: 2000px) {

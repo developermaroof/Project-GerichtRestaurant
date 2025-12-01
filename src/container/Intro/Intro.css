@@ -21,4 +21,14 @@
   border-radius: 50%;
   border: 1px solid var(--color-golden);
   cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(220, 202, 135, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.app__video-overlay_circle:hover {
+  transform: scale(1.1);
+  border-color: var(--color-white);
+  background: rgba(220, 202, 135, 0.2);
+  box-shadow: 0 0 30px rgba(220, 202, 135, 0.5);
 }

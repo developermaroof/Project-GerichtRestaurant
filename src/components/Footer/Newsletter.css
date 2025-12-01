@@ -13,6 +13,10 @@
   margin-top: 3rem;
 }
 
+.app__newsletter-input {
+  position: relative;
+}
+
 .app__newsletter-input input {
   width: 620px;
   border: 1px solid var(--color-golden);
@@ -20,10 +24,53 @@
   font-size: 1rem;
   font-family: var(--font-base);
   color: var(--color-white);
-
   margin-right: 2rem;
   padding: 0.75rem 1rem;
   background: var(--color-black);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.app__newsletter-input input:focus {
+  border-color: var(--color-golden);
+  box-shadow: 0 0 10px rgba(220, 202, 135, 0.3);
+  transform: translateY(-2px);
+}
+
+.app__newsletter-input input.error {
+  border-color: #ff6b6b;
+  animation: shake 0.5s;
+}
+
+.app__newsletter-input input::placeholder {
+  color: var(--color-grey);
+  opacity: 0.7;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.newsletter-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: var(--font-alt);
+  font-size: 14px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease;
+}
+
+.newsletter-message.success {
+  color: #51cf66;
+  background: rgba(81, 207, 102, 0.1);
+}
+
+.newsletter-message.error {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
 }
 
 .app__newsletter-input button {

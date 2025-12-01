@@ -4,8 +4,20 @@
   justify-content: space-between;
   align-items: center;
   background: var(--color-black);
-
   padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app__navbar.scrolled {
+  background: rgba(12, 12, 12, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 0.8rem 2rem;
 }
 
 .app__navbar-logo {
@@ -16,6 +28,11 @@
 
 .app__navbar-logo img {
   width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.app__navbar-logo:hover img {
+  transform: scale(1.05);
 }
 
 .app__navbar-links {
@@ -30,10 +47,34 @@
 .app__navbar-links li {
   margin: 0 1rem;
   cursor: pointer;
+  position: relative;
 }
 
-.app__navbar-links li:hover {
-  color: var(--color-grey);
+.app__navbar-links li a {
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.app__navbar-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-golden);
+  transition: width 0.3s ease;
+}
+
+.app__navbar-links li a:hover::after,
+.app__navbar-links li a.active::after {
+  width: 100%;
+}
+
+.app__navbar-links li a:hover,
+.app__navbar-links li a.active {
+  color: var(--color-golden);
 }
 
 .app__navbar-login {
@@ -45,11 +86,28 @@
 .app__navbar-login a {
   margin: 0 1rem;
   text-decoration: none;
-  transition: 0.5s ease;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.app__navbar-login a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-golden);
+  transition: width 0.3s ease;
+}
+
+.app__navbar-login a:hover::after {
+  width: 100%;
 }
 
 .app__navbar-login a:hover {
-  border-bottom: 1px solid var(--color-golden);
+  color: var(--color-golden);
 }
 
 .app__navbar-login div {
@@ -98,8 +156,30 @@
   font-family: var(--font-base);
 }
 
-.app__navbar-smallscreen_links li:hover {
+.app__navbar-smallscreen_links li a {
+  transition: all 0.3s ease;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.app__navbar-smallscreen_links li a.active {
+  color: var(--color-golden);
+  transform: translateX(10px);
+}
+
+.app__navbar-smallscreen_links li:hover a {
   color: var(--color-white);
+  transform: translateX(10px);
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-icon:hover {
+  transform: scale(1.1);
+  color: var(--color-golden) !important;
 }
 
 @media screen and (min-width: 2000px) {

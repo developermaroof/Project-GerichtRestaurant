@@ -39,9 +39,21 @@
   margin: 0 2rem;
 }
 
+.app__specialMenu-menu_img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .app__specialMenu-menu_img img {
   width: 100%;
   height: auto;
+  transition: transform 0.5s ease;
+  filter: drop-shadow(0 10px 30px rgba(220, 202, 135, 0.2));
+}
+
+.app__specialMenu-menu_img:hover img {
+  transform: scale(1.05);
 }
 
 .app__specialMenu_menu_items {

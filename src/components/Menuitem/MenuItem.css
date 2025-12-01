@@ -1,9 +1,16 @@
 .app__menuitem {
   width: 100%;
   margin: 1rem 0;
-
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.app__menuitem:hover {
+  transform: translateX(5px);
+  background: rgba(220, 202, 135, 0.05);
 }
 
 .app__menuitem-head {
