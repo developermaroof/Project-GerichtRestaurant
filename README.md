@@ -200,7 +200,7 @@ Edit the CSS variables in `src/index.css`:
 
 ## 🌐 Live Demo
 
-🔗 **[View Live Demo](https://your-demo-link.com)** _(Add your deployed link here)_
+🔗 **[View Live Demo](https://gerichtchineserestaurant.netlify.app/)**
 
 ## 📱 Responsive Breakpoints
 
@@ -232,9 +232,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **DeveloperMaroof**
 
-- Portfolio: [Your Portfolio Link]
-- LinkedIn: [Your LinkedIn]
-- Email: [Your Email]
+- Portfolio: [https://developermaroof.vercel.app/]
+- LinkedIn: [https://www.linkedin.com/in/developermaroof/]
+- Email: [developermaroof@gmail.com]
 
 ---
 
